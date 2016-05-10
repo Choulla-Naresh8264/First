@@ -4,23 +4,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.may6.first.NowActivity">
+    tools:context="com.may6.first.InterestActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/interest_amount"
+        android:ems="10"
+        android:id="@+id/editAmount"
+     />
 
 
-    <Button
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="@string/interest_rate"
+        android:id="@+id/editRate"
+    />
+
+    <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Show Time"
-        android:onClick="showTime"
-        android:id="@+id/btnShow"
+        android:text="@string/interest_round"
+        android:id="@+id/checkRound"
         android:layout_gravity="center_horizontal" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Clear"
-        android:onClick="clearText"
-        android:id="@+id/btnClear"
+        android:text="Calculate"
+        android:onClick="calculate"
         android:layout_gravity="center_horizontal" />
 
     <TextView
@@ -28,6 +45,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text=""
-        android:id="@+id/tvMessage"
+        android:id="@+id/tvResult"
         android:layout_gravity="center_horizontal" />
+
 </LinearLayout>
