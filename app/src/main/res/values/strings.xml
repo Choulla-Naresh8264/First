@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">First</string>
+    <string name="prompt">Select Course</string>
     <string name="interest_amount">Deposit Amount</string>
     <string name="interest_rate">Interest Rate</string>
     <string name="interest_round">Round Interest</string>
+    <string-array name="courses">
+        <item>Android Programming</item>
+        <item>Java SE </item>
+        <item>ASP.NET</item>
+    </string-array>
 </resources>
