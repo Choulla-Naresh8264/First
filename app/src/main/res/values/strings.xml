@@ -9,4 +9,5 @@
         <item>Java SE </item>
         <item>ASP.NET</item>
     </string-array>
+    <string name="title_activity_books">BooksActivity</string>
 </resources>
