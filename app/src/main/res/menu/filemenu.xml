@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     
-   <item android:id="@+id/optOpen" android:title="Open" />
-   <item android:id="@+id/optSave" android:title="Save" />
+   <item android:id="@+id/optOpen" android:title="Open"
+       android:alphabeticShortcut="o"
+       android:icon="@drawable/open" />
+   <item android:id="@+id/optSave" android:title="Save"
+       android:alphabeticShortcut="s"
+       android:icon="@drawable/save" />
+
+   <item android:id="@+id/optOptions" android:title="Options">
+      <menu>
+      <item android:id="@+id/optFont" android:title="Font" />
+      <item android:id="@+id/optColor" android:title="Color" />
+      </menu>
+   </item>
+
 
 </menu>
