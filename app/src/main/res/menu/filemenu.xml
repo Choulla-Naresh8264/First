@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    
    <item android:id="@+id/optOpen" android:title="Open"
        android:alphabeticShortcut="o"
+       android:showAsAction="ifRoom|withText"
        android:icon="@drawable/open" />
    <item android:id="@+id/optSave" android:title="Save"
        android:alphabeticShortcut="s"
+       android:showAsAction="ifRoom|withText"
        android:icon="@drawable/save" />
 
    <item android:id="@+id/optOptions" android:title="Options">

@@ -53,6 +53,9 @@ public class FileMenuActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
          switch( item.getItemId())
          {
+             case android.R.id.home :
+                 Log.d("First", "Home Selected");
+                 return true;
              case  R.id.optOpen :
                  Log.d("First", "Open Selected!");
                  return true;
@@ -60,6 +63,7 @@ public class FileMenuActivity extends Activity {
                  Log.d("First", "Save Selected!");
                  return true;
              default :
+                 Log.d("First","Nothing selected!");
                  return false;
          }
     }
