@@ -1,5 +1,6 @@
 package com.may6.first;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,6 +18,8 @@ public class FileMenuActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_file_menu);
         registerForContextMenu( findViewById(R.id.tvContent));
+        ActionBar bar = getActionBar();
+        bar.setHomeButtonEnabled(true);
     }
 
     @Override

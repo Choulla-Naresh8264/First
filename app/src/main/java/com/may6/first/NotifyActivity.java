@@ -6,6 +6,8 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.view.View;
@@ -37,7 +39,8 @@ public class NotifyActivity extends Activity {
 
 		NotificationCompat.Builder b = new NotificationCompat.Builder(this);
 		b.setSmallIcon( R.drawable.save);
-        // b.setLargeIcon()
+		Bitmap bm = BitmapFactory.decodeResource( getResources(), R.drawable.john);
+        b.setLargeIcon(bm);
 	    Intent notificationIntent = new Intent(this, HelloActivity.class);
 		PendingIntent contentIntent =  PendingIntent.getActivity(this, 1, notificationIntent,0);
 		b.setContentIntent(contentIntent);
