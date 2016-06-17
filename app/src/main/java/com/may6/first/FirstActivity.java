@@ -2,13 +2,13 @@ package com.may6.first;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 public class FirstActivity extends Activity {
-
+    static final int THIRD = 3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,5 +43,22 @@ public class FirstActivity extends Activity {
         Intent  intent = new Intent(this, SecondActivity.class);
         intent.putExtra("message","Hello!");
         startActivity(intent);
+    }
+
+    public void callThird(View v) {
+        Intent  intent = new Intent(this, ThirdActivity.class);
+        startActivityForResult(intent, THIRD);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode ==  THIRD)
+        {
+            if (resultCode == Activity.RESULT_OK) {
+                String message =  data.getStringExtra("message");
+                Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+            }
+        }
+
     }
 }
