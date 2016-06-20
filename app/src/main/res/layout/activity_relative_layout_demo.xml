@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10px" >
+
+    <TextView android:id="@+id/label" 
+              android:layout_width="match_parent" 
+              android:layout_height="wrap_content" 
+              android:text="Enter your name :" />
+
+    <EditText android:id="@+id/entry" 
+              android:layout_width="match_parent" 
+              android:layout_height="wrap_content" 
+              android:layout_below="@id/label" />
+  
+    <Button android:id="@+id/btnOk"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_below="@id/entry"
+            android:layout_toLeftOf="@id/btnCancel"
+            android:layout_marginLeft="10px"
+            android:text="OK" />
+
+    <Button android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/btnOk"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btnCancel"
+            android:text="Cancel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a textview"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/btnOk"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toStartOf="@+id/textView3"
+        android:layout_marginTop="97dp" />
+</RelativeLayout>
