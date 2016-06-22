@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
         android:supportsRtl="true">
-        <activity android:name=".BooksListViewActivity">
+        <activity android:name=".OrientationDemoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

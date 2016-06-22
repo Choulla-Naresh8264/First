@@ -3,8 +3,12 @@ package com.may6.first;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -44,6 +48,14 @@ public class BooksListViewActivity extends Activity {
                 new int[]{R.id.tvTitle, R.id.tvPrice});
 
         listBooks.setAdapter(sa);
+
+        listBooks.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                   TextView tvTitle = (TextView) view.findViewById(R.id.tvTitle);
+                   Log.d("First", "Title : " + tvTitle.getText());
+            }
+        });
 
     }
 
