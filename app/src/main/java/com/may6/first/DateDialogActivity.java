@@ -1,7 +1,5 @@
 package com.may6.first;
 
-import java.util.Calendar;
-
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
@@ -9,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
+
+import java.util.Calendar;
 
 public class DateDialogActivity extends Activity {
 
@@ -55,7 +55,7 @@ public class DateDialogActivity extends Activity {
 					}
 				}
 				, year, month, day);
-	}
+}
 	
 
 

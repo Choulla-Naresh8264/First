@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -20,11 +21,12 @@ public class AlertDialogActivity extends Activity {
 	}
 	@Override
 	protected Dialog onCreateDialog(int id) {
+		    Log.d("First", "onCreateDialog()");
 			return getAlertDialog();
 	}
 	
 	public Dialog getAlertDialog() {
-
+		Log.d("First", "getAlertDialog()");
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setMessage("Do you want to quit dialog?");
 		builder.setCancelable(false);

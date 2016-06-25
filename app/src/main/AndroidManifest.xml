@@ -3,13 +3,14 @@
     package="com.may6.first">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-        android:supportsRtl="true">
-        <activity android:name=".BooksAdapterActivity">
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.PopupOverlay">
+        <activity android:name=".StylesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,7 +19,7 @@
         </activity>
         <activity android:name=".SecondActivity" />
         <activity android:name=".ThirdActivity" />
-        <activity android:name=".LayoutsDemoActivity" />
+        <activity android:name=".HelloActivity" />
     </application>
 
 </manifest>

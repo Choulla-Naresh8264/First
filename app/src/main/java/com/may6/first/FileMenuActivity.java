@@ -2,7 +2,6 @@ package com.may6.first;
 
 import android.app.ActionBar;
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.ContextMenu;
@@ -66,7 +65,7 @@ public class FileMenuActivity extends Activity {
                  Log.d("First", "Save Selected!");
                  return true;
              default :
-                 Log.d("First","Nothing selected!");
+                 Log.d("First","Something else selected!");
                  return false;
          }
     }

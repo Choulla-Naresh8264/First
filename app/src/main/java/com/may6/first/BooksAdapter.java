@@ -1,7 +1,6 @@
 package com.may6.first;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,7 +35,7 @@ public class BooksAdapter extends BaseAdapter {
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
-    //    if (convertView == null) {
+        if (convertView == null) {
             LayoutInflater inflater = LayoutInflater.from(ctx);
             convertView = inflater.inflate(R.layout.book_layout, null);
 
@@ -57,9 +56,7 @@ public class BooksAdapter extends BaseAdapter {
                      activity.getTotal();
                 }
             });
-
-
-        //}
+        }
         return convertView;
     }
 

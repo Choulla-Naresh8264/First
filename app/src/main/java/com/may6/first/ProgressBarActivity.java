@@ -16,7 +16,7 @@ public class ProgressBarActivity extends Activity {
 	public void download(View v){
 		 dialog = ProgressDialog.show(this,"Dowload","Downloading..... Please wait!");
 
-		 
+
 		 (new Thread() {
 		     @Override
 		     public void run() {
@@ -30,8 +30,7 @@ public class ProgressBarActivity extends Activity {
 		    	  dialog.dismiss();
 		     }
 		 }).start();
-		 
-		 
+
 	}
 	
 	public void showProgress(View v){
