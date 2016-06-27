@@ -1,9 +1,7 @@
 package com.may6.first;
 
-/**
- * Created by Dell vostro on 23-06-2016.
- */
-public class Book {
+ 
+public class Book implements Serializable {
     private String title;
     private int price;
     private boolean selected;
