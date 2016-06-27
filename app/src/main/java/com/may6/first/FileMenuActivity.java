@@ -18,7 +18,8 @@ public class FileMenuActivity extends Activity {
         setContentView(R.layout.activity_file_menu);
         registerForContextMenu( findViewById(R.id.tvContent));
         ActionBar bar = getActionBar();
-        bar.setHomeButtonEnabled(true);
+        if ( bar != null)  // if ActionBar is present 
+            bar.setHomeButtonEnabled(true);
     }
 
     @Override
